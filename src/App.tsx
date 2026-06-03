@@ -14,7 +14,7 @@ const validListings: ListingItem[] = data
     );
   })
   .map((item) => {
-    const imageUrl = item.MainImage?.url_570xN || "";
+    const imageUrl = item.MainImage?.url_570xN || "No Image";
     return {
       listing_id: Number(item.listing_id),
       url: String(item.url),
